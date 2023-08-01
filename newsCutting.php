@@ -19,110 +19,110 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.1/html2canvas.min.js"></script>
     <style>
         @font-face {
-    font-family: "My Custom Font";
-    src: url("fonts/AgameeI.TTF") format("truetype");
-}
-body{
-    margin: 50px 30px 20px 30px;
-    padding: 10px;
-    font-family: "My Custom Font", sans-serif;
-    color:#3D3D3D;
-    background-color: #F5F5F5; 
-}
-.english {
-    font-family: 'Courier New', Courier, monospace;
-}
-/* header area */
-.header {
-    display: flex;
-}
+            font-family: "My Custom Font";
+            src: url("fonts/AgameeI.TTF") format("truetype");
+        }
+        body{
+            margin: 50px 30px 20px 30px;
+            padding: 10px;
+            font-family: "My Custom Font", sans-serif;
+            color:#3D3D3D;
+            background-color: #F5F5F5; 
+        }
+        .english {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /* header area */
+        .header {
+            display: flex;
+        }
 
-.image-section {
-    flex: 1;
-}
-.image-section img{
-    height: 150px;
-}
+        .image-section {
+            flex: 1;
+        }
+        .image-section img{
+            height: 150px;
+        }
 
-/* promotional */
+        /* promotional */
 
-.promotional {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .promotional .english {
-    margin-right: 10px;
-  }
-  
-  .promotional .tagline {
-    margin-left: 10px;
-  }
+        .promotional {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .promotional .english {
+            margin-right: 10px;
+        }
+        
+        .promotional .tagline {
+            margin-left: 10px;
+        }
 
-/* navigation area */
-.nav-area{
-    margin: 30px 0px 50px 0px;
-    text-align: center;
-    background-color: #006A4E;
-    color: #F7FEFD;
-}
+        /* navigation area */
+        .nav-area{
+            margin: 30px 0px 50px 0px;
+            text-align: center;
+            background-color: #006A4E;
+            color: #F7FEFD;
+        }
 
-.nav-area p{
-    padding: 8px;
-    font-weight: 400;
-}
+        .nav-area p{
+            padding: 8px;
+            font-weight: 400;
+        }
 
-/* main article */
+        /* main article */
 
-.article p {
-    column-count: 2; /* Set the number of columns */
-    column-gap: 20px; /* Set the gap between columns */
-    text-align: justify;
-    font-size: 20px;
-}
+        .article p {
+            column-count: 2; /* Set the number of columns */
+            column-gap: 20px; /* Set the gap between columns */
+            text-align: justify;
+            font-size: 20px;
+        }
 
-.picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.image {
-    filter: grayscale(10%);
-}
+        .image {
+            filter: grayscale(10%);
+        }
 
-.sourse {
-    font-style: italic;
-    font-weight: bold;
-}
+        .sourse {
+            font-style: italic;
+            font-weight: bold;
+        }
 
-/* my Addvertisement */
-.myAdd {
-    font-style: italic;
-    color: green;
-    text-align: center; 
-}
+        /* my Addvertisement */
+        .myAdd {
+            font-style: italic;
+            color: green;
+            text-align: center; 
+        }
 
-/* footer area  */
-.footer {
-    text-align: center;
-    margin: 100px 0px 50px 0px;
-    font-weight: 600;
+        /* footer area  */
+        .footer {
+            text-align: center;
+            margin: 100px 0px 50px 0px;
+            font-weight: 600;
 
-}
+        }
 
-/* coursor */
-#screenshot-btn {
-  cursor: pointer;
-}
+        /* coursor */
+        #screenshot-btn {
+        cursor: pointer;
+        }
 
 
-@media screen and (max-width: 768px) {
-    .article {
-        column-count: 1; /* Switch to a single column on smaller screens */
-    }
-}
+        @media screen and (max-width: 768px) {
+            .article {
+                column-count: 1; /* Switch to a single column on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -179,59 +179,59 @@ body{
 
     <script>
         document.getElementById('screenshot-btn').addEventListener('click', function() {
-  html2canvas(document.body).then(function(canvas) {
-    // Create a temporary link
-    var link = document.createElement('a');
-    link.href = canvas.toDataURL();
+        html2canvas(document.body).then(function(canvas) {
+        // Create a temporary link
+        var link = document.createElement('a');
+        link.href = canvas.toDataURL();
 
-    link.download = 'সংবাদচিত্র_newsCutting_' + getCurrentTime() + '.png';
+        link.download = 'সংবাদচিত্র_newsCutting_' + getCurrentTime() + '.png';
 
-    // Function to get current time as minutes and seconds
-    function getCurrentTime() {
-    var currentDate = new Date();
-    var minutes = currentDate.getMinutes().toString().padStart(2, '0');
-    var seconds = currentDate.getSeconds().toString().padStart(2, '0');
-    return minutes + ':' + seconds;
-    }
+        // Function to get current time as minutes and seconds
+        function getCurrentTime() {
+            var currentDate = new Date();
+            var minutes = currentDate.getMinutes().toString().padStart(2, '0');
+            var seconds = currentDate.getSeconds().toString().padStart(2, '0');
+            return minutes + ':' + seconds;
+        }
 
-    // Trigger the download
-    link.click();
-  });
-});
+            // Trigger the download
+            link.click();
+        });
+        });
 
-// @@@@@@@@@@@BanglaDate@@@@@@@@@@@@@@
- // Array of Bangla day names
-    const banglaDayNames = [
-        "রবিবার", "সোমবার", "মঙ্গলবার", "বুধবার",
-        "বৃহস্পতিবার", "শুক্রবার", "শনিবার"
-    ];
+        // @@@@@@@@@@@BanglaDate@@@@@@@@@@@@@@
+        // Array of Bangla day names
+        const banglaDayNames = [
+            "রবিবার", "সোমবার", "মঙ্গলবার", "বুধবার",
+            "বৃহস্পতিবার", "শুক্রবার", "শনিবার"
+        ];
 
-    // Get the current date
-    const currentDate = new Date();
+        // Get the current date
+        const currentDate = new Date();
 
-    // Set the options for Bengali calendar
-    const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        calendar: 'beng',
-        numberingSystem: 'beng'
-    };
+        // Set the options for Bengali calendar
+        const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            calendar: 'beng',
+            numberingSystem: 'beng'
+        };
 
-    // Format the date in the Bengali calendar
-    const formatter = new Intl.DateTimeFormat('bn-BD', options);
-    const formattedDate = formatter.format(currentDate);
+        // Format the date in the Bengali calendar
+        const formatter = new Intl.DateTimeFormat('bn-BD', options);
+        const formattedDate = formatter.format(currentDate);
 
-    // Get the day index (0-6)
-    const dayIndex = currentDate.getDay();
+        // Get the day index (0-6)
+        const dayIndex = currentDate.getDay();
 
-    // Get the corresponding Bangla day name
-    const banglaDayName = banglaDayNames[dayIndex];
+        // Get the corresponding Bangla day name
+        const banglaDayName = banglaDayNames[dayIndex];
 
-    // Display the Bangla day name and date
-    const banglaDateTimeElement = document.getElementById("banglaDateTime");
-    banglaDateTimeElement.textContent = 'প্রকাশের তারিখঃ ' +formattedDate+ ' | ই-পেপার ভার্সন  ';
+        // Display the Bangla day name and date
+        const banglaDateTimeElement = document.getElementById("banglaDateTime");
+        banglaDateTimeElement.textContent = 'প্রকাশের তারিখঃ ' +formattedDate+ ' | ই-পেপার ভার্সন  ';
 
     </script>
 
