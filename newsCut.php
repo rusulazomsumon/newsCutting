@@ -174,6 +174,7 @@
           </div>
           <div class="copyright">
             <img src="https://doiniksongbadchitro.com/wp-content/uploads/2023/07/doinik-songbadchitro-sangbadik-niyog.jpg" alt="" width="100%">
+            <p class="copy">  <span class="">সম্পাদকঃ  </p>
             <p class="copy">  <span class="english">&copy;</span> ২০২৩ - দৈনিক সংবাদ চিত্র </p>
             
           </div>
