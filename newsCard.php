@@ -1,6 +1,6 @@
 <?php 
     /* 
-        Template Name: News Press 
+        Template Name: News Card 
         Template Post Type: post, page
     */ 
 ?>
@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Cutting Version2</title>
+    <title><?php echo get_bloginfo('name'); ?></title>  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.3/dist/css/bootstrap-icons.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.1/html2canvas.min.js"></script>
     <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
