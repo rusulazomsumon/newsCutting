@@ -21,10 +21,9 @@
     
     <style>
       body{
-      margin: 50px;
       font-family: "My Custom Font", sans-serif;
-      color:#060606;
-      background-color: #ffffff; 
+      /* color:#060606; */
+      background-color: red; 
       font-family: 'SolaimanLipi', Arial, sans-serif !important;
       /* font-family: 'kalpurush', Arial, sans-serif !important; */
       }
@@ -32,23 +31,27 @@
           font-family: 'Courier New', Courier, monospace;
       }
       /* header area */
-      .header {
-          display: flex;
-      }
+      /* .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
 
       .image-section {
-          flex: 1;
+        flex: 1;
+        text-align: right;
       }
       .image-section img{
-          height: 150px;
-      }
+        width: 100px;
+        height: 50px;
+      } */
 
       /* promotional */
 
       .promotional {
-          margin-top: 20px;
-          text-align: center;
-          background-color: #CAEAE5;
+        flex: 1;
+        text-align: left;
         }
         
         .promotional .tagline {
@@ -77,15 +80,22 @@
       /* main article */
 
       .news {
-          max-width: 1200px;
+          width: 1080px;
+          height: auto;
           margin: 20px auto;
           padding: 10px;
+          text-align: center;
         }
 
         .title {
-          font-size: 42px;
-          text-align: center;
-          font-weight: 900;
+  font-size: 64px;
+  text-align: center;
+  font-weight: bolder; /* or 900 */
+  text-shadow: 0 1px 2px black;
+}
+
+      .title h1{
+        color: #F42A40;
       }
 
         .image-wrapper {
@@ -100,7 +110,9 @@
           overflow: hidden;
           text-align: justify;
         }
-
+        .print-area {
+            background: linear-gradient(180deg, #F0EFE3 50%, #006E4D 50%);
+        }
         .content p{
           font-size: 24px;
           font-weight: 500;
@@ -127,65 +139,41 @@
           font-style: italic;
       }
 
+      /* details button */
+      
+
     </style>
 
 </head>
 <body>
-    <div class="print-area">
-        <div class="header">
-            <!-- <div class="image-section">
-              <img src="./img/imageskjk.jpg" alt="Image 1">
-            </div> -->
-            <div class="image-section">
-              <img style="width: 100%;" src="https://doiniksongbadchitro.com/wp-content/uploads/2023/08/WhatsApp_Image_2023-08-01_at_13.02.00-removebg-preview.png" alt="Image 2">
-            </div>
-            <!-- <div class="image-section">
-              <img  style=" margin-left: 150px;" src="./img/mujib100.png" alt="Image 3">
-            </div> -->
+<div class="print-area" style="background-color: #F2EEE3;">
+    <div class="header" >
+        <!-- <div class="promotional">
+            <span class="tagline"><p id="banglaDateTime"></p></span>
+        </div> -->
+        <div style="text-align: center;  background-color: #red; position: relative; ">
+            <img src="https://doiniksongbadchitro.com/wp-content/uploads/2023/08/WhatsApp_Image_2023-08-01_at_13.02.00-removebg-preview.png" width="600px" height="150px" ">
         </div>
-
-        <div class="promotional ">
-            <span class="tagline"><p id="banglaDateTime"> </p> </span>
-        </div>
-        
-    
-        <div class="nav-area english">
-            <p>www.doiniksongbadchitro.com</p>
-            <p>www.facebook.com/doiniksongbadchitro</p>
-            <p>mail: info@doiniksongbadchitro.com</p>
-            <!-- <p> বুধবার | ১৪ ই জুন ২০২৩ | ৫ ই আষাঢ় | ১২ ই রবিউল আউয়াল | </p> -->
-        </div>
-          
-        <div class="news">
-            <h1 class="title"><?php the_title(); ?></h1>
-            <div class="content">
-              <div class="image-wrapper">
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" width="100%" height="auto">
-              </div>
-              
-              
-              <hr>
-              <!-- the news content -->
-              <?php the_content(); ?>
-              <!-- offter Adertisement -->
-              <p class="offer">*১৯৯৯ টাকায় নিউজ পোর্টাল সহ যে কোন ওয়েবসাইট বানাতে, যোগাযোগঃ 01882834071</p>
-              
-            </div>
-          </div>
-          <div class="copyright">
-            <img src="https://doiniksongbadchitro.com/wp-content/uploads/2023/07/doinik-songbadchitro-sangbadik-niyog.jpg" alt="" width="100%">
-            <p class="copy">  <span class="">সম্পাদকঃ  মোঃ সোহাগ শেখ </p>
-            <p class="copy">  <span class="">সহ সম্পাদক ও প্রকাশকঃ  মোঃ সৌরভ শেখ </p>
-            <p class="copy">  <span class="english">&copy;</span> ২০২৩ - দৈনিক সংবাদ চিত্র </p>
-            
-          </div>
-    
-        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@FooterArea@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-
     </div>
+
+    <div class="content-wrapper" style=" height: 50%; display: flex;">
+        <div class="news text-center" style="flex: 1; padding: 20px;">
+            <h1 class="title" style="color: red; font-size: 48px; font-weight: 900; text-align: center;"><?php the_title(); ?></h1>
+            <div class="content">
+                <div style="text-align: center;  background-color: #red; ">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" height="auto">
+                    <p style="border-radius: 50px; background-color: red; color: white; font-size: 26px;                    text-align: center; padding: 10px 20px; display: inline-block; cursor: pointer;">
+                        << বিস্তারিত লিংক কমেন্টে >>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     
-    <button id="screenshot-btn">@</button>
-    <!-- <p class="myAdd">মাত্র <b> ২২২২ টাকায় </b> যে কোন ওয়েবসাইট বানাতে, যোগাযোগঃ ০১৮৮২৮৩৪০৭১</p> -->
+    <button id="screenshot-btn">^</button>
 
     <script>
         document.getElementById('screenshot-btn').addEventListener('click', function() {
@@ -241,7 +229,7 @@
 
         // Display the Bangla day name and date
         const banglaDateTimeElement = document.getElementById("banglaDateTime");
-        banglaDateTimeElement.textContent = ' প্রকাশের সময়ঃ ' +formattedDate+ ' | বর্ষঃ ১, পৃষ্ঠাঃ ১২,  | ই-পেপার ভার্সন | মূল্যঃ ফ্রি  ';
+        banglaDateTimeElement.textContent = formattedDate;
 
     </script>
 </body>
