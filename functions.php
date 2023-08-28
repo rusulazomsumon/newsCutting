@@ -47,6 +47,8 @@
         wp_enqueue_style( 'bangla_font', get_template_directory_uri().'/assets/fonts/LiTitirUnicode-Italic.ttf', array(), '1.0.0', 'all' );
         wp_enqueue_style( 'bangla_font', get_template_directory_uri().'/assets/fonts/LiTitirUnicode-Regular.ttf', array(), '1.0.0', 'all' );
         wp_enqueue_style( 'googel-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap', false );
+        wp_enqueue_style( 'kalpurush', 'https://fonts.maateen.me/kalpurush/font.css', false );
+        wp_enqueue_style( 'kalpurush', 'https://fonts.maateen.me/solaiman-lipi/font.css', false );
         wp_enqueue_style( 'owl_carousel', get_template_directory_uri().'/assets/lib/owlcarousel/assets/owl.carousel.min.css', array(), '1.0.0', 'all' );
         wp_enqueue_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css', false );
         wp_enqueue_style( 'style', get_template_directory_uri().'/assets/css/style.css', array(), '1.0.0', 'all' );
