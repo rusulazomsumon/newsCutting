@@ -5,7 +5,7 @@
     }
     .nHeading{
         width: 100%;
-        font-family: 'Poppins', sans-sherif;
+        font-family: 'kalpurush', Arial, sans-serif !important;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -57,36 +57,37 @@
 </style>
 
 <!-- Heading dynamification -->
-        <div class="container-fluid nHeading bg-white"> 
-            <div class="ticker"> 
-                <div class="title">
-                    <h5>সংবাদ শিরোনামঃ</h5>
-                </div> 
-                <div class="news"> 
-                <?php 
-                                        
-                    $args = array(
-                        'post_type' => 'post',
-                        'order' => 'DSC',
-                        'posts_per_page' => 3,
-                                
-                    );
-                    $query = new WP_Query($args);
-                    while($query -> have_posts()){
-                        $query->the_post();
-                    ?>
-                    <!-- Breaking news markup start -->
-                    <marquee class="news-content"> 
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> 
-                           
-                    </marquee> 
-                    <!-- breking news markup end -->
-                        <!-- rest of loop -->
-                        <?php
-                            }
-                            wp_reset_postdata();
-                    ?>
-                </div> 
-            </div> 
+<div class="container-fluid nHeading bg-white">
+    <div class="ticker">
+        <div class="title">
+            <h5>সংবাদ শিরোনামঃ</h5>
         </div>
-        
+        <div class="news">
+            <?php
+                $args = array(
+                    'post_type' => 'post',
+                    'order' => 'DESC',
+                    'posts_per_page' => 5
+                );
+                $query = new WP_Query($args);
+                $i = 1;
+                while($query -> have_posts()){
+                    $query->the_post();
+            ?>
+            <!-- Breaking news markup start -->
+            <?php if ($i == 1) { ?>
+                <marquee class="news-content">
+            <?php } ?>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?>&nbsp; |&nbsp;</a> 
+            <?php if ($i == 5) { ?>
+                </marquee>
+            <?php } ?>
+            <?php $i++; ?>
+            <!-- breking news markup end -->
+            <?php
+                }
+                wp_reset_postdata();
+            ?>
+        </div>
+    </div>
+</div>  

@@ -72,7 +72,7 @@
                 <a href="<?php site_url(); ?>"><?php the_custom_logo(); ?></a>
             </div>
             <div class="col-lg-8 text-center text-lg-right">
-                <a href="https://htmlcodex.com"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/ads-728x90.png" alt=""></a>
+                <a href="#"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/ads-728x90.png" alt=""></a>
             </div>
         </div>
     </div>

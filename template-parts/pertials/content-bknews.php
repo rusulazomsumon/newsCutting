@@ -21,7 +21,7 @@
                                             $query->the_post();
                                             ?>
                                     <!-- Breaking news markup start -->
-                                <div class="text-truncate">
+                                <div class="text-truncate" style="font-family: 'kalpurush', Arial, sans-serif !important;">
                                     <a class="text-white text-uppercase font-weight-semi-bold" 
                                         href="<?php the_permalink(); ?>"><?php the_title(); ?>
                                     </a>

@@ -12,6 +12,7 @@
     <div class="container-fluid">
         <!-- ###############################Breaking News #################################### -->
         <?php 
+        // breaking news 
             get_template_part('template-parts/pertials/content','nHeading'); 
         ?>
         <!-- Breaking News End -->
@@ -30,9 +31,11 @@
                             $query->the_post();
                             ?>
                             <!-- Single News  markup -->
+
                     <!-- single post start: slider -->
+
                     <div class="position-relative overflow-hidden" style="height: 500px;">
-                        <img class="img-fluid h-100" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption($post); ?>" style="object-fit: cover;">
+                        <img class="img-fluid h-100" style="font-family: 'kalpurush', Arial, sans-serif !important;" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_caption($post); ?>" style="object-fit: cover;">
                         <div class="overlay">
                             <div class="mb-2">
                                 <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
@@ -44,9 +47,9 @@
                                                 }
                                             ?>
                                         </span></a>
-                                <a class="text-white" href=""><?php the_date(); ?></a>
+                                <a class="text-white" style="font-family: 'kalpurush', Arial, sans-serif !important;" href=""><?php the_date(); ?></a>
                             </div>
-                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" href="<?php the_permalink(); ?>">
+                            <a class="h2 m-0 text-white text-uppercase font-weight-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>">
                                 <?php the_title(); ?></a>
                         </div>
                     </div>
@@ -90,7 +93,7 @@
                      <!-- ******3333333333333******** leatest single news international *******33333333333333**** -->
                         <div class="col-lg-6">
                             <div class="section-title">
-                                <h4 class="m-0 text-uppercase font-weight-bold">দেশ জনপদের খবর</h4>
+                                <h4 class="m-0 text-uppercase font-weight-bold" >দেশ জনপদের খবর</h4>
                             </div>
                             <?php 
                                 $args = array(
@@ -105,7 +108,7 @@
                             ?>
                             <!-- single post markup -->
                             <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="<?php the_post_thumbnail_url(); ?>" style="object-fit: cover;">
+                                <img class="img-fluid w-100" style="font-family: 'kalpurush', Arial, sans-serif !important;" src="<?php the_post_thumbnail_url(); ?>" style="object-fit: cover;">
                                 <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
@@ -119,7 +122,7 @@
                                                 ?>
                                             </span>
                                         </a>
-                                        <a class="text-body" href="#"><small><?php the_date(); ?></small></a>
+                                        <a class="text-body" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="#"><small><?php the_date(); ?></small></a>
                                     </div>
                                     <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     <p class="m-0"><?php the_excerpt() ?></p>
@@ -163,10 +166,10 @@
                                                 ?>
                                             </span>
                                         </a>
-                                        <a class="text-body" href="#"><small><?php the_date(); ?></small></a>
+                                        <a class="text-body" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="#"><small><?php the_date(); ?></small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                    <p class="m-0"><?php the_excerpt() ?></p>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <p class="m-0" style="font-family: 'kalpurush', Arial, sans-serif !important;"><?php the_excerpt() ?></p>
                                 </div>
                             </div>
                             <!-- single post markup: end -->
@@ -183,7 +186,7 @@
                     <!-- %%%%%%%%%%%%%%%%%%%%%NewsRow2%%%%%%%%%%%%%%%%%%%%5 -->
                     <div class="row">
                      <!-- ******3333333333333******** leatest single news international *******33333333333333**** -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4">  
                             <div class="section-title">
                                 <h5 class="m-0 text-uppercase font-weight-bold">মতামত</h5>
                             </div>
@@ -216,7 +219,7 @@
                                         </a>
                                         <a class="text-body" href="#"><small><?php the_date(); ?></small></a>
                                     </div>
-                                    <a class="h6 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <a class="h6 d-block mb-3 text-secondary text-uppercase font-weight-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </div>
                             </div>
                             <!-- single post markup: end -->
@@ -257,9 +260,9 @@
                                                 ?>
                                             </span>
                                         </a>
-                                        <a class="text-body" href="#"><small><?php the_date(); ?></small></a>
+                                        <a class="text-body" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="#"><small><?php the_date(); ?></small></a>
                                     </div>
-                                    <a class="h6 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <a class="h6 d-block mb-3 text-secondary text-uppercase font-weight-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </div>
                             </div>
                             <!-- single post markup: end -->
@@ -300,9 +303,9 @@
                                                 ?>
                                             </span>
                                         </a>
-                                        <a class="text-body" href="#"><small><?php the_date(); ?></small></a>
+                                        <a class="text-body" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="#"><small><?php the_date(); ?></small></a>
                                     </div>
-                                    <a class="h6 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <a class="h6 d-block mb-3 text-secondary text-uppercase font-weight-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </div>
                             </div>
                             <!-- single post markup: end -->
@@ -353,9 +356,9 @@
                                                 ?>
                                             </span>
                                         </a>
-                                        <a class="text-body" href="#"><small><?php the_date(); ?></small></a>
+                                        <a class="text-body" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="#"><small><?php the_date(); ?></small></a>
                                     </div>
-                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     <p class="m-0"><?php the_excerpt() ?></p>
                                 </div>
                             </div>
@@ -411,7 +414,7 @@
                                             </span>
                                         </a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </div>
                             </div>
                         <!-- single post markup: end -->
@@ -426,7 +429,7 @@
                     <!-- Newsletter Start -->
                     <div class="mb-3">
                         <div class="bg-white text-center border border-top-0 p-3">
-                            <p>নিয়মিত সর্বশেষ সংবাদ পেতে ইমেল দিয়ে সাবস্ক্রাইব করুন!</p>
+                            <p >নিয়মিত সর্বশেষ সংবাদ পেতে ইমেল দিয়ে সাবস্ক্রাইব করুন!</p>
                             <div class="input-group mb-2" style="width: 100%;">
                                 <input type="text" class="form-control form-control-lg" placeholder="Your Email">
                                 <div class="input-group-append">

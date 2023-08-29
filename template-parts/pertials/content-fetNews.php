@@ -17,7 +17,7 @@
                         $query -> the_post();
                         ?>
                         <!-- single post markup -->
-                        <div class="position-relative overflow-hidden" style="height: 300px;">
+                        <div class="position-relative overflow-hidden" style="font-family: 'kalpurush', Arial, sans-serif !important; height: 300px;">
                             <img class="img-fluid h-100" src="<?php the_post_thumbnail_url(); ?>" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-2">
@@ -32,9 +32,9 @@
                                             ?>
                                         </span>
                                     </a>
-                                    <a class="text-white" href=""><small><?php the_date(); ?></small></a>
+                                    <a class="text-white" style="font-family: 'kalpurush', Arial, sans-serif !important;" href=""><small><?php the_date(); ?></small></a>
                                 </div>
-                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </div>
                         </div>
                     <!-- single post markup: end -->

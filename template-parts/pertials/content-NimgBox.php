@@ -15,7 +15,7 @@
                             <!-- Single News  markup start -->
                     <div class="col-md-6 px-0">
                             <div class="position-relative overflow-hidden" style="height: 250px;">
-                                <img class="img-fluid w-100 h-100" src="<?php the_post_thumbnail_url(); ?>" style="object-fit: cover;">
+                                <img class="img-fluid w-100 h-100" style="font-family: 'kalpurush', Arial, sans-serif !important;" src="<?php the_post_thumbnail_url(); ?>" style="object-fit: cover;">
                                 <div class="overlay">
                                     <div class="mb-2">
                                         <!-- post category showing -->
@@ -30,9 +30,9 @@
                                                 ?>
                                             </span>
                                         </a>
-                                        <a class="text-white" href=""><small><?php the_date(); ?></small></a>
+                                        <a class="text-white" style="font-family: 'kalpurush', Arial, sans-serif !important;" href=""><small><?php the_date(); ?></small></a>
                                     </div>
-                                    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" 
+                                    <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" style="font-family: 'kalpurush', Arial, sans-serif !important;"
                                         href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                 </div>
                             </div>
